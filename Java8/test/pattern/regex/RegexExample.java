@@ -1,7 +1,4 @@
 package test.pattern.regex;
-
-
-
 import java.util.regex.Pattern;
 
 public class RegexExample {
