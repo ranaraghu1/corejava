@@ -14,18 +14,21 @@ public class Student {
 	  }
 	 
 	public int getStudentId() {
+		System.out.println("student id : "+studentId);
 		return studentId;
 	}
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
+		System.out.println("student id: "+studentId);
 	}
 	public String getStudentName() {
+		System.out.println("student name: "+studentName);
 		return studentName;
 	}
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
+		
 	}
-	
 	
 	
 
