@@ -1,0 +1,182 @@
+ JavBackend Developer interview questions
+ 
+ How do you handle exceptions in Java, and what are the best practices?
+ 
+ 1.Be careful what you log- Always be mindful of the customer’s security and privacy rights.
+ It’s also a good practice to log the exception details instead of just printing them to the console and to handle exceptions at the appropriate level of abstraction in the code.
+ 2.Log the name of the exception and the message associated with it. That way you or others can extract information about an exceptional situation from the logs.
+ The logs should provide enough information about the exception to enable quick diagnosis and resolution of the error. 
+ 3.Avoid Empty Catch Blocks and Swallowing Exceptions.
+  Empty catch blocks and swallowing exceptions are common anti-patterns in Java exception handling.
+  4.Use finally Blocks for Cleanup and Resource Management.
+  Use a finally block to close the resources(FileInputStream and FileOutputStream objects), ensuring that the resources are released even if an exception occurs.
+   
+  
+        try { 
+            fis = new FileInputStream("input.txt"); 
+            fos = new FileOutputStream("output.txt"); 
+            int data; 
+            while ((data = fis.read()) != -1) { 
+                fos.write(data); 
+            } 
+        } catch (FileNotFoundException e) { 
+            System.err.println("Input file not found"); 
+            e.printStackTrace(); 
+        } catch (IOException e) { 
+            System.err.println("I/O exception occurred"); 
+            e.printStackTrace(); 
+        } finally { 
+            if (fis != null) { 
+                try { 
+                    fis.close(); 
+                } catch (IOException e) { 
+                    e.printStackTrace(); 
+                } 
+            } 
+            
+ 5.Don’t log and rethrow.
+ 6.Explicitly define exceptions in the throws clause
+ Lazy developers use the generic Exception class in the throws clause of a method.
+ 
+ 7.Catch the most specific exception first.
+ 
+ 8.Use modern exception handling techniques.
+ 
+ 9.Propagate Exceptions Up the Call Stack When Appropriate
+ 
+ 10. When to use Unchecked Exception.(RuntimeException)
+ Errors are used to represent those conditions which occur outside the application, such as crash of the system.
+  Runtime exceptions are usually occur by fault in the application logic. 
+  You can't do anything in these situations. When runtime exception occur, you have to re-write your program code. So, these are not checked by compiler. 
+ These runtime exceptions will uncover in development, and testing period. Then we have to refactor our code to remove these errors.
+ 
+ 
+ How do you ensure thread safety in a Java application?
+ 
+  Multithreading, which is a process of running multiple threads simultaneously. When multiple threads are working on the same data, and the value of our data is changing, that scenario is not thread-safe and we will get inconsistent results
+ Using Synchronization
+Using Volatile Keyword
+Using Atomic Variable
+Using Final Keyword
+ Final Variables are also thread-safe in java because once assigned some reference of an object It cannot point to reference of another object. 
+
+Can you discuss the importance of design patterns in Java development?---
+
+How do you optimize the performance of a Java application?
+
+1.Avoid Writing Long Methods
+
+Single Responsibility Principle (SRP), which states that each method should have a single responsibility and focus on a specific task or functionality
+
+2.Use PreparedStatement instead of Statement
+PreparedStatement is a more efficient way to execute SQL queries in Java than the Statement class. This is because PreparedStatement can precompile the SQL statement
+
+PreparedStatement can also help to prevent SQL injection attacks.
+
+3.Use Caching
+It improves performance by storing frequently accessed data in memory. This can help to reduce the number of times that the data needs to be read from disk or the database.
+
+4.Use Stored Procedures Instead of Queries
+Stored procedures are precompiled SQL statements that can be executed by the database server. 
+5.Leverage StringBuilder
+Use StringBuilder to make string concatenation easier by appending new strings to the existing StringBuilder object instead of creating new string objects each time a concatenation operation is performed.
+6.Optimize If-Else Statements .
+If-else statements can affect Java performance because they require the JVM to evaluate each condition sequentially
+Additionally, developers can leverage switch statements instead of long chains of if-else statements to improve performance
+
+Describe a challenging bug you encountered in a Java application and how you resolved it.
+I was working on an app that was heavily dependent on some really complex SQL Views in a Postgres db to determine who should see what data. 
+The views would even be made up of other views. After hours of diving deeper and deeper into the queries to manually recreate what the app was doing,
+ I found something that broke my brain. I executed something like, "SELECT * FROM table WHERE primary_key=5" and TWO rows came back. One where the key was 5 and one where it was something else. So, 
+it turned out the bug was caused by a corrupt index. We dropped it and re-added it and the bug went away.
+
+How do you handle database interactions in a Java backend application?0 Connection pool, cache.
+
+What strategies do you use for version control in Java projects?
+Write Good Commit Messages
+They include making sure every commit is traceable, having clearly defined branches, and conducting thorough reviews. 
+
+How do you ensure code quality and maintainability in your Java applications?
+
+Use consistent and meaningful naming conventions.
+Write comments and documentation.
+Follow the DRY (Don't Repeat Yourself) principle.
+Use proper indentation and spacing.
+Refactor your code regularly.
+Write unit tests and perform code reviews.
+
+How do you handle security concerns in Java applications?
+
+Use Latest version and update regularly
+Write Clean and concise code.
+
+Use Strong Authentication
+protect sensitive data
+securely handling errors.
+prevent Injection attack
+Care ful log and monitor
+Use Java security manager
+Avoid Java serialisation
+Hash User Passwords-Use
+Use a salted hash on user passwords. SHA-2 is a great algorithm to use for hashing. Storing anything as plain text is a sure-fire way to welcome malicious behavior
+
+How do you handle large-scale data processing in Java? Kafka
+
+How do you manage API versioning in Java applications?
+
+Query Parameter Versioning
+Before: http://localhost:8080/v1/get-books
+http://localhost:8080/v2/get-books
+
+After: http://localhost:8080/get-books?version=1.0 and http://localhost:8080/get-books?version=2.0
+Its one end point
+
+What is your experience with asynchronous programming in Java?
+
+Java allows you to execute the tasks concurrently improving the overall performance and responsiveness of your applications
+Callbacks with CompletableFuture-  Java 8 
+
+public static void main(String[] args) {
+        CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "Hello, CompletableFuture!";
+        });
+        future.thenAccept(result -> System.out.println("The Result: " + result));
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    
+    Asynchronous Programming with Future and ExecutorService
+    
+      public static void main(String[] args) {
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        Future<String> future = executor.submit(() -> {
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "Hello, Future!";
+        });
+        try {
+            String result = future.get();
+            System.out.println("The Result: " + result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        executor.shutdown();
+    }
+
+
+
+
+
+
