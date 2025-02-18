@@ -258,7 +258,22 @@ public class ConcurrentHashMapTest extends Thread{
 
 
 }
+URL
 
+	kubernates and AWS
+
+https://www.youtube.com/abhishekveeramalla 
+
+
+kafka
+
+Concept Details
+https://www.youtube.com/watch?v=ZJJHm_bd9Zo&t=8s 
+Spring boot Application
+https://www.youtube.com/watch?v=tU_37niRh4U
+https://www.youtube.com/watch?v=2YnutJ8tNos
+
+	L
 
 
 
