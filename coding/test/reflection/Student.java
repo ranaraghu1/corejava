@@ -1,4 +1,4 @@
-package reflection;
+package test.reflection;
 
 public class Student {
 	private int studentId;
