@@ -1,0 +1,145 @@
+RTO
+-----------------------
+May: RTO-13,Leave -1
+June: RTO-11,leave -2
+July: RTO-11, Leave-0
+Aug: RTO-10,Leave-0
+Sep: RTO-9 Leave-4th,Holiday-1
+Oct: RTO-9 Leave-16th(1/2)25th-1,Holiday-1
+Nov: RTO-11,Leave-2
+Dec: RTO=11,Leave(Dec 1=1/2 days,15th,22nd,26th and 29th )
+Jan(2024): RTO=11,Leave(Jan 4=1/2 days,Jan 5=1 day,Jan 22=1 day)
+Feb: RTO=9, Leave(Feb 16,Feb 22)
+Mar: RTO=10, Leave(0)
+April: RTO=8,Leave(4),Holiday(1)
+May: RTO=12,Leave(2),Holiday(1)
+June: RTO=10
+July: RTO=13,Leave(1)
+Aug: RTO=11,Leave(2),Holiday(1)
+Sept: RTO=10,Leave(2)
+Oct: RTO=14,Leave(1),Holiday(3)
+Nov: RTO=12,Leave(2.5)
+Dec:RTO=9,Leave(1),Holiday(1)
+Jan(2025):RTO=10,Leave(4)
+Feb:RTO=4,Leave(0)
+
+
+Upcoming Training/programme
+----------------------------
+
+ACE-Associate cloud engineering- Attended
+05-06-23 to 15-06-23(11.00 AM to 1.00PM)
+
+
+Blood Donation - Donated
+Date & Time: June 16 | 10:30am – 1:30pm
+
+
+WIN OVER YOUR CUSTOMER- Missed
+Tuesday, September 26, 2023 9:00:00 AM I­S­T-1:30:00 PM I­S­T
+
+
+Microservices Architecture- Completed
+Completion date-December 10 2023
+
+
+Program Name : Art of Business Communication
+Duration of the online course : 30 minutes
+Last Date to complete : 29th November 2023.
+
+
+Course name: Information Security Refresher Pre-Assessment- Completed.
+Assigned on: 05/08/2024
+Due by: 04/09/2024
+Retries opportunities: Unlimited
+
+
+Next Training
+-------------
+Win Over Your Customer - Virtual Instructor-led Session-completion by Nov2024- Completed
+07-11-2024    9:00am-1:30pm
+
+
+TopicCarb Code: Deciphering Diabetes - Friendly Diet
+Date & Time
+Selected Sessions: Nov 13, 2024 03:00 PM
+
+
+AECS Financial Wellness: Maximize Your Take-Home Salary: A Guide to Effective Tax Planning
+18th November 2024-11AM
+
+Global CEO Townhall
+Wednesday, November 20  7:30 PM IST 19:00 AM EST | 2:00 PM GMT
+
+
+Future Ready session 2.0: Cloud trends 2025- Completed.
+
+ 
+Full stack java developer
+ ---------------------------
+core java made easy
+Spring boot fundamentals
+spring data JPA
+Spring cloud fundamentals
+Java design patterns
+ReactJs in easy steps-- Full stack development using reach with spring boot and node
+Angular crash course- Full stack development using Angular spring boot and node
+NodeJs made easy
+Full stack development using spring boot Angular and React
+DevOps tools and AWS for java microservice developers
+Gradle for java developers
+Spring security fundamentals.
+Linux, Perl, Shell Scripting
+
+
+ JD
+-----------------
+Core Java
+Spring Boot
+Java/Microservices
+Java /Angular
+JAVA-J2EE
+Java Full stack
+JAVA/React JS.
+JAVA/AWS
+Golang/Java and JavaScript/TypeScript
+Java/Docker/Kubernetes/MongoDB
+ 
+
+Some useful links
+-----------------------
+https://wilearn.sumtotal.host/rcore/myToDoList
+
+
+
+GCP
+-----------------------
+
+https://wipro365.sharepoint.com/sites/GoogleCloudAcademy/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FGoogleCloudAcademy%2FShared%20Documents%2FGCP%2DCertification%2FGCP%2DPractice%20Questions%2FGCP%20Course%20Track%2Epdf&parent=%2Fsites%2FGoogleCloudAcademy%2FShared%20Documents%2FGCP%2DCertification%2FGCP%2DPractice%20Questions&p=true&ct=1685950705569&or=Teams%2DHL&ga=1
+
+
+Must have Skills:
+
+9+ years of professional software development experience in Java.
+
+Extensive server-side software development experience.
+
+Solid hands-on Experience with J2EE frameworks such as Spring.
+
+Hands-on experience in developing Microservices with Spring Boot.
+
+Good experience with writing unit tests using Junit.
+
+Strong SQL, experience with Databases including, Oracle and MySQL.
+
+Experience with JDBC and ORM persistence technologies (JPA,Hibernate).
+
+Good understanding of developing serverless applications using AWS Lambda.
+
+Experience on Docker and Kubernetes.
+
+Project lead experience who can drive initiatives with minimal supervision.
+
+
+
+
