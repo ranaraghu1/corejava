@@ -1,5 +1,6 @@
 package test.creational.designpattern;
-
+//centralized the object creation.
+//separate object creation from client code
 interface Employee{
 	public String getEmployeePriviledge();
 	
