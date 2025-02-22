@@ -1,0 +1,117 @@
+//Anagrams-Both String length is equal and same content.
+       String s1="listen";
+       String s2="silent";
+	
+       String sortedString1=s1.chars().sorted().mapToObj(i->(char)i).map(String::valueOf).collect(Collectors.joining());
+       String sortedString2=s1.chars().sorted().mapToObj(i->(char)i).map(String::valueOf).collect(Collectors.joining());
+	    	 
+	    	if(sortedString1.equals(sortedString2)) {
+	    		isAnagrams=true;
+	    	}
+	    	
+	    	
+	    	
+//CommonElelmentsFromTwoList	    	
+
+        List<Integer> list1=Arrays.asList(2,3,6,8);
+		List<Integer> list2=Arrays.asList(2,8,0,1);//2,8
+		
+		list1.stream().filter(list2::contains).collect(Collectors.toList()).forEach(a->{
+			System.out.println(a);
+		});
+		
+		int[] arr1= {2,3,6,8};
+		int[] arr2= {2,8,0,1};
+		List<Integer> list3=Arrays.stream(arr1).boxed().collect(Collectors.toList());
+		List<Integer> list4=Arrays.stream(arr2).boxed().collect(Collectors.toList());
+		
+		list3.stream().filter(list4::contains).collect(Collectors.toList()).forEach(a->{
+			System.out.println(a);
+		});
+		
+		
+//CompressedStringTest 	
+	
+    List<String> result=new ArrayList<>();
+	AtomicInteger count=new AtomicInteger(1);
+	String input="aabbbbc";//a2b3c1
+	
+	IntStream.range(0, input.length())
+	.forEach(i->{
+		if(i>0 && input.charAt(i)==input.charAt(i-1)) {
+			count.incrementAndGet();
+		}else {
+			if(i>0) {
+			result.add(String.valueOf(input.charAt(i-1))+count);
+			}
+			count.set(1);
+		}
+	});
+	
+	result.add(String.valueOf(input.charAt(input.length()-1))+count);		
+		
+		
+		
+//DuplicateCharactersInString
+        String str="raghunath";
+		Map<Character,Long> map=str.chars().mapToObj(i->(char)i).collect(Collectors.groupingBy(e->e,Collectors.counting()));
+		List<Character> charList=map.entrySet().stream().filter(a->a.getValue()>1).map(e->e.getKey()).toList();
+			
+		charList.forEach(e->System.out.println("Duplicate characters  "+e));		
+		
+		
+		
+//FindNthLargestNumberFromArray
+
+		int[] arr= {4,8,1,3};//find second highest wil be 4.
+		
+		List<Integer> list=Arrays.stream(arr).boxed().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		
+		int a=list.get(1);//n-1
+		
+		
+//MissingNumberFromArray
+//boxed()- return type Stream<Integer>
+		int[] arr= {2,3,4,5};// output=1
+		
+		List<Integer> list=Arrays.stream(arr).filter(i->i>0).sorted().distinct().boxed().collect(Collectors.toList());
+		int missingNum=IntStream.rangeClosed(1, list.size()+1).filter(i->list.contains(i)).findFirst().orElse(1);		
+		
+		
+//Reverse a string
+	AtomicInteger count=new AtomicInteger(str.length()-1);
+		StringBuffer sb=new StringBuffer();
+		IntStream.range(0,str.length()-1)
+		.forEach(i->{
+			if(i<str.length()-1) {
+				sb.append(String.valueOf(str.charAt(count.get())));
+				count.decrementAndGet();
+			}
+					
+		});
+		
+		sb.append(String.valueOf(str.charAt(0))); //appending 1st element
+		
+		
+		
+//ReverseWordString
+		Pattern pattern = Pattern.compile(" +");
+		String sentence="Java is a robust language";
+		Stream<String> stream = pattern.splitAsStream(sentence);
+		String output=stream.map(word-> new StringBuilder(word).reverse()).collect(Collectors.joining(" "));				
+		
+		
+//TwoArraysAreEqualOrNot
+
+		int[] a= {1,3,6,5};
+		int[] b= {3,1,5,6};
+		
+		boolean areEqual=false;
+		
+		if(a.length!=b.length) {
+			areEqual=false;
+		}
+			
+		if(Arrays.equals(Arrays.stream(a).sorted().toArray(), Arrays.stream(b).sorted().toArray())) {
+			areEqual=true;	
+		}				
