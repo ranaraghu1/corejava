@@ -1,7 +1,5 @@
 package test.java8.stream;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
@@ -15,14 +13,16 @@ class Reverse{
 				sb.append(String.valueOf(str.charAt(count.get())));
 				count.decrementAndGet();
 			}
-			
-			
+					
 		});
 		
 		sb.append(String.valueOf(str.charAt(0)));
 		return sb.toString();
 	}
+	
+
 }
+
 public class ReverseAString {
 	public static void main(String arags[]) {
 		String str="java";
