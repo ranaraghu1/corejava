@@ -24,8 +24,8 @@ https://www.youtube.com/watch?v=6O5iJ7PKUhs
 https://www.youtube.com/watch?v=WGI_ciUa3FE
 
 Resilience4J Circuit Breaker Implementation on Spring Boot --Pending
-https://www.youtube.com/watch?v=b6R4dElDtRc&t=580s
 https://www.youtube.com/watch?v=b6R4dElDtRc
+https://www.youtube.com/watch?v=Z4CSGsOLb1c&t=27s
 
 
 Spring security with spring 3.0--pending
