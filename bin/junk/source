@@ -8,6 +8,7 @@ Kafka concept Details
 https://www.youtube.com/watch?v=ZJJHm_bd9Zo&t=8s 
 
 Kafka with Spring boot Application
+--------------------------------------
 https://www.youtube.com/watch?v=tU_37niRh4U
 https://www.youtube.com/watch?v=2YnutJ8tNos
 
@@ -31,4 +32,85 @@ Java 8
 --------
 https://www.youtube.com/watch?v=LI1CXp9McVw&list=PLQQJyacPDg8O321-aKyuNNkkRJYs-ZNhK&index=1
 
-https://www.youtube.com/watch?v=PMhrMDHFFW4&list=PLyHJZXNdCXsfcMboYwGoL6wKAFPxljz5W&index=1Some useful training
+https://www.youtube.com/watch?v=PMhrMDHFFW4&list=PLyHJZXNdCXsfcMboYwGoL6wKAFPxljz5W&index=1
+
+https://www.youtube.com/watch?v=VGVS_i-XvxY&list=PLyHJZXNdCXsfcMboYwGoL6wKAFPxljz5W&index=10
+
+Microservice- Saga design pattern
+-----------------------
+https://www.youtube.com/watch?v=Fe_qPM81hJ8
+https://www.youtube.com/watch?v=xuH81XGWeGQ
+
+
+interview Intro
+-----------------------
+https://www.youtube.com/watch?v=gSwgHC5apX8
+
+Spring Boot interview Questions
+------------------------------
+https://www.youtube.com/watch?v=XilRv9wJhzc
+
+SpringBoot micro service mock interview
+------------------------------------------
+https://www.youtube.com/watch?v=RRH2o5WCBr4
+https://www.youtube.com/watch?v=9grEmpRfK0Y
+
+Jenkins with EC2
+---------------
+https://www.youtube.com/watch?v=361bfIvXMBI
+
+https://www.youtube.com/@devopsshack
+
+Kafka interview Questions
+-------------------------
+https://www.youtube.com/watch?v=Q7tU0B1bnSE&t=792s
+
+Implementation of kafka
+https://www.youtube.com/watch?v=WOPPG5tyApg
+
+https://www.youtube.com/watch?v=rVqAoUIPO7I
+https://www.youtube.com/watch?v=d0T9g0_G_3U
+
+Create Kafka cluster using Docker compose file
+-----------------------------------------------
+https://www.youtube.com/watch?v=EiMi11slVnY
+
+kafka cluster in Kubernates
+-----------------------------
+https://www.youtube.com/watch?v=rPU6YKKWZ1c
+
+SAGA Choreography Implementation using kafka
+--------------------------------------------
+https://www.youtube.com/watch?v=aOen1-pQLZg
+https://www.youtube.com/watch?v=6O5iJ7PKUhs
+
+https://www.youtube.com/watch?v=WGI_ciUa3FE
+
+Resilience4J Circuit Breaker Implementation on Spring Boot --Pending
+----------------------------------------------------------
+https://www.youtube.com/watch?v=b6R4dElDtRc
+
+Spring security with spring 3.0--pending
+---------------------------------------
+https://www.youtube.com/watch?v=R76S0tfv36w
+
+Spring security JWT token-- pending
+------------------------------------
+https://www.youtube.com/watch?v=NcLtLZqGu2M
+
+Java techie-  https://www.youtube.com/@Javatechie
+
+API gateway with service registry(Eureka)-Spring security and JWT token
+----------------------------------------
+https://www.youtube.com/watch?v=MWvnmyLRUik
+https://www.youtube.com/watch?v=qODoDq5_hAM
+
+https://www.youtube.com/watch?v=HzJsX4WTxnM
+https://www.youtube.com/watch?v=WkP5dt7dLXg
+
+Details 
+https://www.youtube.com/watch?v=NnkUGzaqqOc
+
+
+
+update
