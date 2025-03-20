@@ -1,4 +1,4 @@
-package test.java8.stream;
+package test.array.datastructure.algo;
 
 import java.util.Arrays;
 import java.util.List;

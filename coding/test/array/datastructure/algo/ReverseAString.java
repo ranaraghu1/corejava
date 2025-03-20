@@ -1,4 +1,4 @@
-package test.java8.stream;
+package test.array.datastructure.algo;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
