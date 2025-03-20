@@ -1,4 +1,4 @@
-package test.java.basics;
+package test.array.datastructure.algo;
 import java.util.stream.IntStream;
 
 public class PalindromeExample {

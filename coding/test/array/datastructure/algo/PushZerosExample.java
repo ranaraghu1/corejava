@@ -1,4 +1,4 @@
-package test.java.basics;
+package test.array.datastructure.algo;
 
 public class PushZerosExample {
 	

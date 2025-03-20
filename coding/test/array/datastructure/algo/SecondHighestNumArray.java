@@ -1,4 +1,4 @@
-package test.java.basics;
+package test.array.datastructure.algo;
 
 public class SecondHighestNumArray {
 	public static int getSecondLargest(int[] a, int total){  

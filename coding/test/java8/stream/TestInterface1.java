@@ -1,4 +1,4 @@
-package test.java.basics;
+package test.java8.stream;
  interface TestInterface{
 	 default void show()
 	    {
