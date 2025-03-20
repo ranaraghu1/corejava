@@ -8,23 +8,23 @@ import java.util.Optional;
 
 }
 public class MethodReference {
-	public static void addMore(int a, int b) {
+	public static void add(int a, int b) {
 		int total=a+b;
 		System.out.println("Add more Items:"+total);
 	}
 
 	public static void main(String[] args) {
-		FunctionalInterfaceMethodRef  add=MethodReference::addMore;
+		FunctionalInterfaceMethodRef  add=MethodReference::add;
 		add.add(8,10);
 		
 		//Optional class- used to deal with NPE.
 		String s = null;
-		Optional<String> checkNull=Optional.ofNullable(s);
-		if(checkNull.isPresent()) 
-			System.out.println("Null is not there");
+		Optional<String> checkIfNull=Optional.ofNullable(s);
+		if(checkIfNull.isPresent()) 
+			System.out.println("Elements are present");
 		
 		else
-			System.out.println("s has no elements present");
+			System.out.println("No element present");
 		
 	}
 }
