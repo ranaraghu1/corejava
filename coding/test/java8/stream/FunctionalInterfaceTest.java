@@ -5,7 +5,7 @@ package test.java8.stream;
 	        System.out.println("Default TestInterface");
 	    } 
  }
-public class TestInterface1 implements TestInterface {
+public class FunctionalInterfaceTest implements TestInterface {
 	
 	public void show()
     {
@@ -14,7 +14,7 @@ public class TestInterface1 implements TestInterface {
 	
 	public static void main(String[] args) {
 		
-		TestInterface test= new TestInterface1();
+		TestInterface test= new FunctionalInterfaceTest();
 		test.show();
 	}
 }
