@@ -1,0 +1,57 @@
+Q1
+String s1="abc";
+String s2="abc";
+System.out.println(s1==s2);
+System.out.println(s1.equals(s2));
+System.out.println(s1.hashCode()==s2.hashCode());
+
+Q2
+String s1=new String("abc");
+String s2=new String("abc");
+System.out.println(s1==s2);
+System.out.println(s1.equals(s2));
+System.out.println(s1.hashCode()==s2.hashCode());
+
+Q3
+StringBuffer sb1=new StringBuffer("abc");
+StringBuffer sb2=new StringBuffer("abc");
+System.out.println(sb1==sb2);
+System.out.println(sb1.equals(sb2));
+System.out.println(sb1.hashCode()==sb2.hashCode());
+
+Q4
+String s1=new String("abc");
+StringBuilder sb=new StringBuilder("abc");
+System.out.println(s1==sb);
+
+Q5
+byte b=10;
+b=b+1;
+System.out.println(b);
+
+Q6
+byte b=20
+b+=1
+System.out.println(b);
+
+Q7
+Class A{
+}
+
+interface B{
+}
+
+Thread t1=new Thread();
+System.out.println(t1 instanceof Runnable);
+System.out.println(t1 instanceof A);
+System.out.println(t1 instanceof B);
+
+Q8
+String s3=new String("raghu");
+StringBuilder sb3=new StringBuilder("abc");
+System.out.println(s3==sb3);
+
+
+Q9
+https://loocalhost:8080/productapp/product/2    - product with id 2 available
+https://loocalhost:8080/productapp/product/3    - product with id 3 is not available
