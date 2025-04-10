@@ -38,7 +38,19 @@ public class StringTest {
 		System.out.println(false ^ false);
 		System.out.println(~5);
 		
-
+		
+		int x=10,y=15;
+		if(++x<10 & ++y>15) {
+			++x;
+			
+		}else {
+			++y;
+		}
+		System.out.println(x+"   "+y);
+		
+		 int b,c,d;	
+	     int a=b=c=d=10; //chained assignments.
+	     System.out.println("a="+a+" b="+b+" c="+c);
 
 	}
 
