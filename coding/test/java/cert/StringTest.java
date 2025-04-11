@@ -51,6 +51,8 @@ public class StringTest {
 		 int b,c,d;	
 	     int a=b=c=d=10; //chained assignments.
 	     System.out.println("a="+a+" b="+b+" c="+c);
+	     
+	     System.out.println(10);
 
 	}
 
