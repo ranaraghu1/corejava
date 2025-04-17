@@ -51,7 +51,30 @@ String s3=new String("raghu");
 StringBuilder sb3=new StringBuilder("abc");
 System.out.println(s3==sb3);
 
-
 Q9
+
+#import java.util.*;
+#import java.util.ArrayList;
+
+public class A{
+public static void main(String[] args) {
+		ArrayList list=new ArrayList();
+
+	}
+}
+
+Q10
+Shall we create a Private or static class ?
+
+Q10
+
+String[][] s= {{"A","B"},{"C","D"}};
+
+print-  C D A B
+print-  D C B A
+
+
+
+Q11
 https://loocalhost:8080/productapp/product/2    - product with id 2 available
 https://loocalhost:8080/productapp/product/3    - product with id 3 is not available
