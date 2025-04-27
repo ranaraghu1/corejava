@@ -1,6 +1,7 @@
 package test.java.cert;
 
 import java.io.IOException;
+import java.util.Collection;
 
 public interface Left {
  public Object m1()throws IOException;
@@ -13,6 +14,7 @@ public interface Left {
 
 
 class Test3 implements Left,Right{
+
 	public String m1(){
 	 return "";
 		

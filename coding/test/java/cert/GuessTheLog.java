@@ -30,11 +30,11 @@ public class GuessTheLog {
 
 	public static void main(String[] args) {
 		 Animal animal = new Dog("Dog");
-	        Dog dog = new Animal("Generic Animal");
+	       // Dog dog = new Animal("Generic Animal");
 	        System.out.println("Animal name: " + animal.getName());
 	        animal.makeSound();//Generaic animal sound
-	        System.out.println("Animal name: " + dog.getName());
-	        dog.makeSound();//error
+	        //System.out.println("Animal name: " + dog.getName());
+	       // dog.makeSound();//error
 
 	}
 }
