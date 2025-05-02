@@ -1,6 +1,6 @@
 package test.java.cert;
 
- class Parent {
+ class ParentTest {
 
 	public static void main(String[] args) {
 		System.out.println("Parent main");
@@ -8,7 +8,10 @@ package test.java.cert;
 	}
 	
 	public class Test1 extends Parent{
-		
+		public static void main(String[] args) {
+			System.out.println("Child main");
+
+		}
 	}
 
 }
