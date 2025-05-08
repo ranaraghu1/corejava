@@ -15,5 +15,6 @@ public class MethodHidingTest2 {
 	public static void main(String args[]) {
 	ParentClass1 p1=new ChildClass1();
 	p1.m1(1,2);
+
 	}
 }
