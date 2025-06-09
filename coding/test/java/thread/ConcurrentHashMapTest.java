@@ -18,7 +18,7 @@ public class ConcurrentHashMapTest extends Thread{
         chm.put(101,"A");
     }
 
-    public static void main(String args[]) throws InterruptedException {
+    public static void main(String args[]) {
         //Adding elements to object created of Map";
         chm.put(102, "B");
         chm.put(103, "C");
@@ -39,7 +39,12 @@ public class ConcurrentHashMapTest extends Thread{
                             + I1 + "..." + chm.get(I1));
 
             // Making thread to sleep for 3 seconds
-            Thread.sleep(3000);
+            try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
 
         // Display elements of map objects
