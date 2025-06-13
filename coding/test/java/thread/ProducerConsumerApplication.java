@@ -108,7 +108,7 @@ public class ProducerConsumerApplication {
 				MarixPair matMarixPair = new MarixPair();
 				matMarixPair.matrix1 = matrix1;
 				matMarixPair.matix2 = matrix2;
-				queue.addmatrics(matMarixPair);
+				queue.add(matMarixPair);
 
 			}
 		}
@@ -133,14 +133,26 @@ public class ProducerConsumerApplication {
 		private Queue<MarixPair> queue = new LinkedList();
 		private boolean isEmpty = true;
 		private boolean isterminate = false;
+		private static final int CAPACITY=5;
+		
 
-		public synchronized void addmatrics(MarixPair matrPair) {
+		public synchronized void add(MarixPair matrPair) {
+			
+			if(queue.size()==CAPACITY) {// Adding Back pressure
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 			queue.add(matrPair);
 			isEmpty = false;
 			notify();
 		}
 
 		public synchronized MarixPair remove() {
+			MarixPair marixPair=null;
 			while (isEmpty && !isterminate) {
 				try {
 					wait();
@@ -159,7 +171,11 @@ public class ProducerConsumerApplication {
 			}
 
 			System.out.println("Queue size::" + queue.size());
-			return queue.remove();
+			marixPair= queue.remove();
+			if(queue.size()==CAPACITY-1) {
+				notifyAll();
+			}
+			return marixPair;
 		}
 
 		public synchronized void terminate() {
