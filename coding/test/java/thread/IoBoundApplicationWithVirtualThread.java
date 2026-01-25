@@ -1,11 +1,10 @@
 package test.java.thread;
 
-import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+//Created The no of virtual thread as per task but the career/worker/plat form thread created by JVM as per OS core.
+public class IoBoundApplicationWithVirtualThread {
 
-//create no of thread per request. Thread per task thread model.
-public class IoBoundApplication {
 	private static final int NUMBER_OF_TASKS = 1000;
 
 	public static void main(String[] args) {
@@ -17,12 +16,12 @@ public class IoBoundApplication {
 		performTasks();
 		long endTime = System.currentTimeMillis();
 		System.out.println(String.format("Task took %dms to complete\n", endTime - startTime));
-		//Create no of threads per task took 85ms to complete where as Virtual Thread took around 17ms to complete for same task.
+		//Task took 17ms to complete
 	}
 
 	private static void performTasks() {
 
-		ExecutorService executorService = Executors.newCachedThreadPool();// Create Dynamic thread pool.Create no of thread per request.
+		ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor();// Create Dynamic thread pool.Create no of thread per request.
 		for (int i = 0; i < NUMBER_OF_TASKS; i++) {
 			executorService.submit(new Runnable() {
 
@@ -46,5 +45,7 @@ public class IoBoundApplication {
 			throw new RuntimeException(e);
 		}
 	}
+
+
 
 }
