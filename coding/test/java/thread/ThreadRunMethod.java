@@ -5,12 +5,12 @@ class MyThread implements Runnable{
 		System.out.println(Thread.currentThread());
 	  System.out.println("In Run method");
 	}
-}
+}\
 public class ThreadRunMethod {
 	public static void main(String[] arg) {
 		MyThread myRunnable=new MyThread();
 		Thread t=new Thread(myRunnable);
-		t.start();
+		t.start();//Thread[#21,Thread-0,5,main]- Create separate thread stack, Thread-0
 		//t.run();//Thread[#1,main,5,main]- Can't create separate thread stack, run in main thread
 		
 	}
